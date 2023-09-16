@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Cookie&family=Inter:wght@500&family=La+Belle+Aurore&family=Libre+Baskerville&family=Roboto:wght@400;500;700&family=Ysabeau+Office&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="./icons/hamburger-menu.svg" />
+            <img class="YouTube-logo" src="./icons/youtube-logo.svg" alt="YouTube Logo" />
+        </div>
+        <div class="middle-section">
+           <input class="search-bar" type="text" placeholder="Search" required />
+           <button class="search-icon">
+            <img class="search-img" src="./icons/search.svg" />
+            <div class="tool-tip">Search</div>
+           </button>
+           <button class="voice-icon">
+            <img class="voice-img" src="./icons/voice-search-icon.svg" />
+            <div class="tool-tip">Search with your voice</div>
+           </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-img" src="./icons/upload.svg" />
+                <div class="tool-tip">Create</div>
+                <!-- put position absolute inside relative to create a tool-tip -->
+                
+            </div>
+
+            <div class="app-container">
+                <img class="app-img" src="./icons/youtube-apps.svg" />
+                <div class="tool-tip">YouTube apps</div>
+            </div>
+            
+            
+            <div class="notification-container">
+                <img class="notification-img" src="./icons/notifications.svg" />
+                <div class="notification-num">7</div>
+                <div class="tool-tip">Notifications</div>
+            </div>
+            <img class="main-profile" src="./profiles/channels4_profile.jpg" /> 
+        </div>
+       
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-tool">
+            <img src="./icons/home.svg"/>
+            <div>Home</div>
+        </div>
+        <div class="sidebar-tool">
+            <img src="./icons/youtube-shorts-logo-15252.svg" />
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-tool">
+            <img src="./icons/subscriptions.svg" />
+            <div>Subscription</div>
+        </div>
+        <div class="sidebar-tool">
+            <img src="./icons/library (1).svg" />
+            <div>Library</div>
+        </div>
+
+    </nav>
+    
+
+    <main>
+        <section class="container">
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://www.youtube.com/watch?v=CqkhjL3WvWQ&pp=ygUeV2hvIENhcmVzIEFib3V0IHRoZSBNZXRhdmVyc2U_">
+                        <img class="thumbnail" src="./thumbnails/channel1.webp" >
+                    </a>
+                    
+                    <div class="video-timer">
+                        15:51
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-1">
+                        <a href="https://www.youtube.com/@mkbhd"><img class="profile-pic" src="./profiles/channel-1.jpeg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/channel-1.jpeg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Marques Brownlee</p>
+                                <p class="tool-tip-info">17.4M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/CqkhjL3WvWQ?si=uBDC2_csQ5UM5EUF"><p class="video-title">Who Cares About the Metaverse?</p></a>
+                        <a href="https://www.youtube.com/@mkbhd"><p class="video-author"> Marques Brownlee</p></a>
+                        <p class="video-stats">8.8M views &#183; 10 months ago</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/syFZfO_wfMQ?si=rGJk6zxSrdxKob7K"><img class="thumbnail" src="./thumbnails/oneD.webp" ></a>
+                    <div class="video-timer">
+                        4:01
+                    </div>
+                </div>
+                <div class="second-row"> 
+                    <div class="channel-pic-2">
+                        <a href="https://www.youtube.com/@onedirectionchannel"><img class="profile-pic" src="./profiles/oneD.jpg" /></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/oneD.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">One Direction</p>
+                                <p class="tool-tip-info">38.3M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/syFZfO_wfMQ?si=rGJk6zxSrdxKob7K"><p class="video-title">One Direction - Night Changes</p></a>
+                        <a href="https://www.youtube.com/@onedirectionchannel"><p class="video-author"> One Direction</p></a>
+                        <p class="video-stats">708M views &#183; 8 years ago</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/QUNrBEhvXWQ?si=GhIladZRmDBSOrHy"><img class="thumbnail" src="./thumbnails/cs.webp" ></a>
+                    <div class="video-timer">
+                        14:27
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-3">
+                        <a href="https://www.youtube.com/@WIRED"><img class="profile-pic" src="./profiles/cs.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/cs.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">WIRED</p>
+                                <p class="tool-tip-info">10.5M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/QUNrBEhvXWQ?si=GhIladZRmDBSOrHy"><p class="video-title">Computer Scientist Answers Computer Questions From Twitter</p></a>
+                        <a href="https://www.youtube.com/@WIRED"><p class="video-author">WIRED
+                        </p></a>
+                        <p class="video-stats">568K views &#183;
+                            4 days ago</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/Vw34wMAqWzc?si=4jyqaPwV2uSY7lIF"><img class="thumbnail" src="./thumbnails/fifa.webp" ></a>
+                    <div class="video-timer">
+                        5:05
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-4">
+                        <a href="https://www.youtube.com/@fifa"><img class="profile-pic" src="./profiles/fifa.jpg" ></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/fifa.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">FIFA</p>
+                                <p class="tool-tip-info">19.7M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/Vw34wMAqWzc?si=4jyqaPwV2uSY7lIF"><p class="video-title">TOP 10 GOALS | 2018 FIFA World Cup Russia</p></a>
+                        <a href="https://www.youtube.com/@fifa"><p class="video-author">FIFA </p></a>
+                        <p class="video-stats">94M views &#183; 5 years ago</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/r95CWFYmj60?si=Hfojkoqm7quViUis"><img class="thumbnail" src="./thumbnails/gym.webp" ></a>
+                    <div class="video-timer">
+                        12:43
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-5">
+                        <a href="https://www.youtube.com/@maxwell.krause"><img class="profile-pic" src="./profiles/gym.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/gym.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Maxwell Krause</p>
+                                <p class="tool-tip-info">29.6K subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/r95CWFYmj60?si=Hfojkoqm7quViUis"><p class="video-title">Build a Greek God Physique in 2023 | Upper Chest & Shoulder Workout</p></a>
+                        <a href="https://www.youtube.com/@maxwell.krause"><p class="video-author">Maxwell Krause</p></a>
+                        <p class="video-stats">285K views &#183; months ago</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/ReVeUvwTGdU?si=5_Ah5HBAKDRTM0SJ"><img class="thumbnail" src="./thumbnails/3yrcs.webp" ></a>
+                    <div class="video-timer">
+                        8:19
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-6">
+                        <a href="https://www.youtube.com/@DevonCrawford"><img class="profile-pic" src="./profiles/3yrcs.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/3yrcs.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Devon Crawford</p>
+                                <p class="tool-tip-info">430K subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/ReVeUvwTGdU?si=5_Ah5HBAKDRTM0SJ"><p class="video-title">3 years of Computer Science in 8 minutes</p></a>
+                        <a href="https://www.youtube.com/@DevonCrawford"><p class="video-author">Devon Crawford</p></a>
+                        <p class="video-stats">7M views &#183; 5 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/GS_GuSu2Hrs?si=wpWYz3GggDLumZFA"><img class="thumbnail" src="./thumbnails/hq720.webp" ></a>
+                    <div class="video-timer">
+                        59:16
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-7">
+                        <a href="https://www.youtube.com/@Sidemen"><img class="profile-pic" src="./profiles/sidemen.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/sidemen.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Sidemen</p>
+                                <p class="tool-tip-info">19M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/GS_GuSu2Hrs?si=wpWYz3GggDLumZFA"><p class="video-title">SIDEMEN GO BACK TO SCHOOL</p></a>
+                        <a href="https://www.youtube.com/@Sidemen"><p class="video-author">Sidemen</p></a>
+                        <p class="video-stats">42M views &#183; 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-preview">
+                <div class="first-row">
+                   <a href="https://youtu.be/Rvey9g0VgY0?si=9K4hcJHzbezForrV"><img class="thumbnail" src="./thumbnails/note.webp" ></a>
+                    <div class="video-timer">
+                        10:50
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-8">
+                        <a href="https://www.youtube.com/@mattdavella"><img class="profile-pic" src="./profiles/note.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/note.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Matt D'Avella</p>
+                                <p class="tool-tip-info">3.74M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/Rvey9g0VgY0?si=9K4hcJHzbezForrV"><p class="video-title">I learned a system for remembering everything</p></a>
+                        <a href="https://www.youtube.com/@mattdavella"><p class="video-author">Matt D'Avella
+                        </p></a>
+                        <p class="video-stats">6.5M views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/YT7tQzmGRLA?si=oiXhwk60ZAelWizn"><img class="thumbnail" src="./thumbnails/alia.webp" ></a>
+                    <div class="video-timer">
+                        11:12
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-9">
+                        <a href="https://www.youtube.com/@aliabdaal"><img class="profile-pic" src="./profiles/ali.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/ali.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Ali Abdaal</p>
+                                <p class="tool-tip-info">4.67M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/YT7tQzmGRLA?si=oiXhwk60ZAelWizn"><p class="video-title">Tiny Changes, Remarkable Results - Atomic Habits by James Clear</p></a>
+                        <a href="https://www.youtube.com/@aliabdaal"><p class="video-author"> Ali Abdaal </p></a>
+                        <p class="video-stats">2.8M views &#183; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/NUzDLpSkQTg?si=8KCvgWL2pyJsj1zU"><img class="thumbnail" src="./thumbnails/rolls.webp" ></a>
+                    <div class="video-timer">
+                        8:36
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-10">
+                        <a href="https://www.youtube.com/@InsiderBusiness"><img class="profile-pic" src="./profiles/business-insider.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/business-insider.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Insider Business </p>
+                                <p class="tool-tip-info">8.14M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/NUzDLpSkQTg?si=8KCvgWL2pyJsj1zU"><p class="video-title">Why Rolls-Royce Cars Are So Expensive | So Expensive</p></a>
+                        <a href="https://www.youtube.com/@InsiderBusiness"><p class="video-author"> Insider Business </p></a>
+                        <p class="video-stats">22M views &#183; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-preview">
+                <div class="first-row">
+                   <a href="https://youtu.be/shW9i6k8cB0?si=GIJT7_QvUbumn54v"><img class="thumbnail" src="./thumbnails/spiderman.webp" ></a>
+                    <div class="video-timer">
+                        2:50
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-11">
+                        <a href="https://www.youtube.com/@sonypictures"><img class="profile-pic" src="./profiles/spiderman.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/spiderman.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">Sony Pictures Entertainment</p>
+                                <p class="tool-tip-info">6.91M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/shW9i6k8cB0?si=GIJT7_QvUbumn54v"><p class="video-title">SPIDER-MAN: ACROSS THE SPIDER-VERSE - Official Trailer #2 (HD)</p></a>
+                        <a href="https://www.youtube.com/@sonypictures"><p class="video-author"> Sony Pictures Entertainment</p></a>
+                        <p class="video-stats">49M views &#183;
+                            4 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-preview">
+                <div class="first-row">
+                    <a href="https://youtu.be/Mxv5h-RZWVs?si=tv4FYXGQQcjj5BYA"><img class="thumbnail" src="./thumbnails/game7.webp" ></a>
+                    <div class="video-timer">
+                        12:30
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="channel-pic-12">
+                        <a href="https://www.youtube.com/@NBA"><img class="profile-pic" src="./profiles/nba.jpg"></a>
+                        <div class="profile-tool-tip">
+                            <div class="tool-channel-pic">
+                                <img class="profile-pic-second" src="./profiles/nba.jpg">
+                            </div>
+                            <div class="channel-tool-tip">
+                                <p class="tool-tip-author">NBA</p>
+                                <p class="tool-tip-info">20.8M subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <a href="https://youtu.be/Mxv5h-RZWVs?si=tv4FYXGQQcjj5BYA"><p class="video-title">Warriors vs Cavaliers: Game 7 NBA Finals - 06.19.16 Full Highlights</p></a>
+                        <a href="https://www.youtube.com/@NBA"><p class="video-author"> NBA </p></a>
+                        <p class="video-stats">23M views &#183; 7 years ago</p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    </main>
+    
+</body>
+</html>
+
+
